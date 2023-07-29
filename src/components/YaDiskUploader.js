@@ -99,7 +99,7 @@ const YaDiskUploader = ({LIMIT}) => {
             {loading && 'Uploading...'}
             {done && `${completed} files uploaded`}
         </h3>
-        {done && <button><a href="https://disk.yandex.com/client/disk">Check your Disk</a></button>}
+        {done && <button className="disk-btn"><a href="https://disk.yandex.com/client/disk" target="blank">Check your Disk</a></button>}
         </>
   );
 }
