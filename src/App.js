@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import YaDiskUploader from './components/YaDiskUploader';
 
 function App() {
+  const LIMIT = 100;
+
+  const hash_token = document.location.hash;
+  if (!hash_token) {
+      
+    return <div className="App">
+      <h2>Please Authorize</h2>
+      <p>Seems like you didn't grant a permission to your Yandex disk.. Please authorize here</p>
+      <button><a href="https://oauth.yandex.ru/authorize?response_type=token&client_id=89ed7aea9f424d399d32080abea953a3">Authorize</a></button>
+    </div>
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <YaDiskUploader LIMIT={LIMIT}/>
     </div>
   );
 }
