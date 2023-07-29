@@ -79,7 +79,7 @@ const YaDiskUploader = ({LIMIT}) => {
         return <div>
             <h2>There was an error...</h2>
             <p>{error}</p>
-            <button><a href="/">Reload</a></button>
+            <button><a href="/" onClick="return false;">Reload</a></button>
         </div>
     }
 
