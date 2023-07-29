@@ -76,10 +76,14 @@ const YaDiskUploader = ({LIMIT}) => {
 
     if (error) {
         document.location.hash = '';
+        const refresh = () => window.location.reload(true)
+        
         return <div>
             <h2>There was an error...</h2>
             <p>{error}</p>
-            <button><a href="/" onClick="return false;">Reload</a></button>
+
+            <button onClick={refresh}>Reload</button>
+
         </div>
     }
 
