@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ya-disk-test/static/css/main.44f076e1.css",
+    "main.js": "/ya-disk-test/static/js/main.5d0e446f.js",
+    "static/js/787.74d17808.chunk.js": "/ya-disk-test/static/js/787.74d17808.chunk.js",
+    "index.html": "/ya-disk-test/index.html",
+    "main.44f076e1.css.map": "/ya-disk-test/static/css/main.44f076e1.css.map",
+    "main.5d0e446f.js.map": "/ya-disk-test/static/js/main.5d0e446f.js.map",
+    "787.74d17808.chunk.js.map": "/ya-disk-test/static/js/787.74d17808.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44f076e1.css",
+    "static/js/main.5d0e446f.js"
+  ]
+}
